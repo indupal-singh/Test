@@ -3,6 +3,7 @@ trigger MessageHistoryTrigger on Message_History__c (before insert) {
         //added comments to check if it will reflect in the open pull request
         //commit 1
         //commit 2
+        //commit 3
         Utils.makeCallout(mh.Message_Text__c);
     }
     
